@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9e951075-e76a-42e3-928d-25d31d2abf6d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="624"/>
+	<queryString>
+		<![CDATA[select * from printrating]]>
+	</queryString>
+	<field name="IA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IB" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIB" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIC" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIIA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIIB" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIIC" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IIID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IV" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMMENT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SUGGESTION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="IAAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IA}]]></variableExpression>
+	</variable>
+	<variable name="IBAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IB}]]></variableExpression>
+	</variable>
+	<variable name="IIAAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIA}]]></variableExpression>
+	</variable>
+	<variable name="IIBAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIB}]]></variableExpression>
+	</variable>
+	<variable name="IICAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIC}]]></variableExpression>
+	</variable>
+	<variable name="IIDAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IID}]]></variableExpression>
+	</variable>
+	<variable name="IIIAAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIIA}]]></variableExpression>
+	</variable>
+	<variable name="IIIBAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIIB}]]></variableExpression>
+	</variable>
+	<variable name="IIICAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIIC}]]></variableExpression>
+	</variable>
+	<variable name="IIIDAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IIID}]]></variableExpression>
+	</variable>
+	<variable name="IVAve" class="java.lang.Integer" calculation="Average">
+		<variableExpression><![CDATA[$F{IV}]]></variableExpression>
+	</variable>
+	<variable name="OverAllValue" class="java.lang.Integer" calculation="Average">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="Interpretation" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="97" y="9" width="368" height="35" uuid="ba4e9c76-c06d-4721-817f-5ec91710df2f"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Our Lady of Fatima University]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="64" width="238" height="20" uuid="87283d1d-7929-4796-a509-4589c5f7bd04"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[COLLEGE OF COMPUTER STUDIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="44" width="100" height="20" uuid="2c56fa16-6da7-429b-9c8b-e26e6f504ffa"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PAMPANGA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="89" height="94" uuid="2374f524-295e-457b-9311-2c3a7536d45e"/>
+				<imageExpression><![CDATA["C:\\Users\\jmallari\\Documents\\NetBeansProjects\\04192020WDESIGN\\SEE04182020\\SEE042020\\eventEvaluation\\bg\\olfu.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="464" y="0" width="91" height="94" uuid="fe5225b2-472f-4b7d-bff4-e48f760b0da4"/>
+				<imageExpression><![CDATA["C:\\Users\\jmallari\\Documents\\NetBeansProjects\\04192020WDESIGN\\SEE04182020\\SEE042020\\eventEvaluation\\bg\\CCS.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="125" splitType="Stretch">
+			<subreport>
+				<reportElement x="10" y="11" width="200" height="100" uuid="a662d47c-16c1-426b-9aa5-f050568b151f"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:\\Users\\jmallari\\Documents\\NetBeansProjects\\SEE042020\\eventEvaluation\\src\\grp6OOPR212\\evaluation_report_subreport2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="36" y="2" width="36" height="20" uuid="7b5bd249-c9cd-4645-b297-183826cffe0d"/>
+				<text><![CDATA[IA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="2" width="53" height="20" uuid="d9e5ca1c-ca63-498f-b712-b58ca9523e3e"/>
+				<text><![CDATA[IB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="2" width="53" height="20" uuid="0d64863d-d23c-4ea5-8f63-914a4d33dd7b"/>
+				<text><![CDATA[IIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="2" width="53" height="20" uuid="4bbe1f4c-d529-46d6-a9a0-5e6488f69f6b"/>
+				<text><![CDATA[IIB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="2" width="53" height="20" uuid="b0d68073-d1f3-46a9-8eea-941510dd1828"/>
+				<text><![CDATA[IIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="2" width="43" height="20" uuid="b1d06a65-d989-494f-9a96-2eb8e7b1dc44"/>
+				<text><![CDATA[IID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="2" width="43" height="20" uuid="82df5cd3-15bc-49a9-aad5-1c78c7b1dac5"/>
+				<text><![CDATA[IIIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="2" width="43" height="20" uuid="061868ca-ed12-4404-a159-5d4bb3e5454b"/>
+				<text><![CDATA[IIIB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="2" width="41" height="20" uuid="3736dd80-e066-48e2-adb3-3791e24ac05a"/>
+				<text><![CDATA[IIIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="2" width="41" height="20" uuid="d98f9598-62a8-4d53-a47a-d793e8a2bf08"/>
+				<text><![CDATA[IIID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="2" width="37" height="20" uuid="15f61547-397d-4abb-9bb8-1879e99fc25c"/>
+				<text><![CDATA[IV]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="36" y="11" width="36" height="20" uuid="a9e6e130-dba9-4405-a690-1f82d7b8f20d"/>
+				<textFieldExpression><![CDATA[$F{IA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="11" width="53" height="20" uuid="8cfc9371-e70e-4db5-8275-49dccd244011"/>
+				<textFieldExpression><![CDATA[$F{IB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="11" width="53" height="20" uuid="1c8d0d4b-389c-4292-bb05-b40707a7be90"/>
+				<textFieldExpression><![CDATA[$F{IIA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="11" width="53" height="20" uuid="1c66b19b-3765-4a89-8784-5f29ab7418cf"/>
+				<textFieldExpression><![CDATA[$F{IIB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="11" width="53" height="20" uuid="c3549378-1f9a-408c-916e-a8606187312a"/>
+				<textFieldExpression><![CDATA[$F{IIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="11" width="43" height="20" uuid="59471f56-61b7-4b02-8573-838db3a5fa02"/>
+				<textFieldExpression><![CDATA[$F{IID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="11" width="43" height="20" uuid="b77b9ab8-4853-4e71-98c1-b47dfb61feca"/>
+				<textFieldExpression><![CDATA[$F{IIIA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="11" width="43" height="20" uuid="a3cd3141-397a-420d-91d5-51c5529abb73"/>
+				<textFieldExpression><![CDATA[$F{IIIB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="11" width="41" height="20" uuid="eacc4f3b-c3fd-446c-af06-40457640e3a6"/>
+				<textFieldExpression><![CDATA[$F{IIIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="11" width="41" height="20" uuid="543f6944-ee8b-44dd-bdf6-b4976d034596"/>
+				<textFieldExpression><![CDATA[$F{IIID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="11" width="37" height="20" uuid="952ea415-43ba-48b0-aac4-40b516e88941"/>
+				<textFieldExpression><![CDATA[$F{IV}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="331" y="90" width="78" height="20" uuid="88f85eb9-74ec-462d-ba30-220670b7281d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IBAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="186" width="78" height="20" uuid="b67c9771-df40-420c-8d13-0bf9fc659c6c"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IICAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="286" width="78" height="20" uuid="4e714288-9cc7-4ea8-acfc-ef1c95575207"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIIBAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="206" width="78" height="20" uuid="27c0c1b8-54c1-4f92-ae0c-5cf7c6c888f4"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIDAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="326" width="78" height="20" uuid="ecfda17c-cb86-491d-aa36-1e8550764817"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIIDAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="166" width="78" height="20" uuid="3b2daa7e-131c-4941-98f3-171fef9de139"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIBAve}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="131" y="410" width="128" height="20" uuid="717b20d2-9f14-431c-a423-f968f99ea412"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Event Overall Rating:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="306" width="78" height="20" uuid="d290da39-0008-4f2c-a9e7-4335168c54ff"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIICAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="146" width="78" height="20" uuid="7a249e66-3838-408c-9cf3-33cb495f7d9d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIAAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="69" width="78" height="20" uuid="5f58da45-b657-4432-9dd2-fa07f5a25a50"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IAAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="366" width="78" height="20" uuid="0a6680f7-be3c-4956-984a-6fe87f18dd32"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IVAve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="266" width="78" height="20" uuid="26f209b4-fd40-4d57-a76c-331fc82076f7"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IIIAAve}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="15" width="238" height="20" uuid="a1f9a217-07be-45da-abc8-bc1197928acd"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUMMARY OF EVALUATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="49" width="160" height="20" uuid="9189d959-3fd4-4002-b9ee-5649e68c40e4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Attainment of Objectives]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="70" width="128" height="20" uuid="dbb1faa2-b408-4ed6-bb81-61b7c6fc7be4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Clarity of theme]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="90" width="128" height="20" uuid="0bad5065-90b9-49a2-af09-25399defbe8a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Clarity of objectives]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="126" width="160" height="20" uuid="135dc21d-c02e-45eb-a652-05846443dc86"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Organization]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="146" width="168" height="20" uuid="061ae068-90de-4517-b6b9-bf5faebfde12"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Involvement of participants]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="186" width="128" height="20" uuid="311a68e9-8d2e-4bb5-9538-7cba40da8168"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Orderliness]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="166" width="128" height="20" uuid="fba5d467-163e-4502-822e-7e8778952d3e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Time frame]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="206" width="168" height="20" uuid="2abaac2d-c8c5-4e60-a1a1-8ba97ca27474"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To personal development]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="246" width="128" height="20" uuid="ee503a8b-c9bf-47f5-aec1-baa778b0a197"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Relevance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="306" width="148" height="20" uuid="f062b20b-3372-44c6-a71d-39c21d112ff8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To social development]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="326" width="168" height="20" uuid="8552a517-9654-477a-bce8-0c86f3cadf5e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To personal development]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="286" width="128" height="20" uuid="cada2d1e-bebe-431e-92d7-142a493674a7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To leadership skills]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="266" width="128" height="20" uuid="4cda9de6-90f3-4f7b-ba13-c07d2a819cdb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To curriculum]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="366" width="128" height="20" uuid="ea009042-e2a5-40cb-a5ba-f9a17617bc60"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Overall Impression]]></text>
+			</staticText>
+			<textField pattern="###0">
+				<reportElement x="331" y="410" width="100" height="20" uuid="ec0620dc-e0a5-471e-9f39-6b27ad6a0331"/>
+				<textFieldExpression><![CDATA[($V{IAAve}+$V{IBAve}+$V{IIAAve}+$V{IIBAve}+$V{IICAve}+$V{IIDAve}+$V{IIIAAve}+$V{IIIBAve}+$V{IIICAve}+$V{IIIDAve}+$V{IVAve})/11]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="454" width="545" height="20" uuid="28890973-aa99-46ac-bd7b-d5de41ab26f2"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5-Excellent  4-Very Satisfactory  3-Satisfactory  2-Moderately Satisfactory  1- Needs Improvement]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

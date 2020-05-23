@@ -1,0 +1,10 @@
+OOPR STUDENT EVENT EVAL PROJECT DOCUMENTATION
+
+2/16/2020
+was unable to start Java DB Server thru the steps instructed by ma'am - turns out i dont have a derby file in my jdk folder
+
+had to do a work around where
+
+Right Click Java DB > Properties > Specify location of JavaDB
+
+C:/ > Program Files > glassfish > javadb

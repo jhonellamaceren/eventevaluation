@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="evaluation_report_subreport2" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="15d9354f-4f60-4abc-9923-c25f86c0e7cb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[Select * from tblevents where activate = true]]>
+	</queryString>
+	<field name="ORGNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACTIVITY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VENUE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EVTCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACTIVATE" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="org" class="java.lang.String">
+		<variableExpression><![CDATA[$F{ORGNAME}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="31" y="67" width="150" height="20" uuid="9b7666e2-62f7-42af-b61d-713c8d440156"/>
+				<text><![CDATA[Venue:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="47" width="150" height="20" uuid="7340e9c6-b966-44fc-8511-87f5e64791b1"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="27" width="150" height="20" uuid="b71e8fe3-e07f-4d05-bc3d-256c42232eb3"/>
+				<text><![CDATA[Title of Activity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="7" width="150" height="20" uuid="0be0cd07-c982-461d-a4b9-832c31a8b155"/>
+				<text><![CDATA[Name of Organization:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="181" y="7" width="100" height="20" uuid="5abbc711-8af6-4bbd-8d25-55d643765422"/>
+				<textFieldExpression><![CDATA[$F{ORGNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="27" width="100" height="20" uuid="0f96cb67-6dab-41c6-901a-bde0162fb697"/>
+				<textFieldExpression><![CDATA[$F{ACTIVITY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="47" width="100" height="20" uuid="64281511-7838-4fa2-acc5-a4b5c089caf9"/>
+				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="67" width="100" height="20" uuid="4551e113-2854-493a-99ab-f05bd7dac437"/>
+				<textFieldExpression><![CDATA[$F{VENUE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
